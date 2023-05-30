@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        modalhoki's Web Calculator
+    </title>
+    <link rel="stylesheet" href="assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="horizontal" id="inti">
+        <div class="vertical calcbody basis75">
+            <div class="display">
+                <h2 id="displayOperator"><br></h2>
+                <h1 id="displayNumber">0</h1>
+            </div>
+
+            <div class="horizontal">
+                <div class="button basis25">7</div>
+                <div class="button basis25">8</div>
+                <div class="button basis25">9</div>
+                <div class="button negative basis25">+/-</div>
+            </div>
+
+            <div class="horizontal">
+                <div class="button basis25">4</div>
+                <div class="button basis25">5</div>
+                <div class="button basis25">6</div>
+                <div class="button operator basis25">-</div>
+            </div>
+
+            <div class="horizontal">
+                <div class="button basis25">1</div>
+                <div class="button basis25">2</div>
+                <div class="button basis25">3</div>
+                <div class="button operator basis25">+</div>
+            </div>
+
+            <div class="horizontal">
+                <div class="button clear basis25">C</div>
+                <div class="button basis25">0</div>
+                <div class="button equals basis50">=</div>
+            </div>
+        </div>
+        <div class="history card basis25">
+            <h2>Riwayat Perhitungan</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Angka Pertama</th>
+                        <th>Operator</th>
+                        <th>Angka Kedua</th>
+                        <th>Hasil</th>
+                    </tr>
+                </thead>
+                <tbody id="historyList"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="assets/storage.js"></script>
+    <script src="assets/logic.js"></script>
+</body>
+
+</html>
